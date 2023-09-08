@@ -9,7 +9,7 @@ const Header = () => {
 			<div className="header-info">
 				<p> 2nd of December, 2023</p>
 				<hr />
-				<p>Jerome’s Garden, Ikeja</p>
+				<p>Jerome&apos;s Garden, Ikeja</p>
 			</div>
 		</header>
 	);

@@ -3,7 +3,6 @@
 import React from "react";
 import { useState } from "react";
 import Image from "next/image";
-import PaystackPop from "@paystack/inline-js";
 import paystack from "../../public/paystack.svg";
 
 const SendGift = () => {
@@ -26,13 +25,16 @@ const SendGift = () => {
 		} else if (!isValidEmail(email)) {
 			alert("Please enter a valid email address.");
 		} else {
-			const paystack = new PaystackPop();
-			paystack.newTransaction({
-				key: "pk_test_801ffc134e346a30a699e4359b1948781aa9d936",
-				amount: amount * 100,
-				email,
-				name,
-				phoneNumber,
+			// Load PaystackPop library dynamically when the button is clicked
+			import("@paystack/inline-js").then((PaystackPop) => {
+				const paystackInstance = new PaystackPop.default();
+				paystackInstance.newTransaction({
+					key: "pk_test_801ffc134e346a30a699e4359b1948781aa9d936",
+					amount: amount * 100, // Ensure the amount is in kobo (100 kobo = 1 naira)
+					email,
+					name,
+					phoneNumber,
+				});
 			});
 		}
 	};

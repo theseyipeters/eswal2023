@@ -41,9 +41,9 @@ const LoveStory = () => {
 						pellentesque. Ut diam quam nulla porttitor. Sit amet nulla facilisi
 						morbi tempus iaculis. Auctor neque vitae tempus quam pellentesque
 						nec nam aliquam sem
-						<h5 className="font-semibold mt-10">
+						<span className="font-semibold mt-10">
 							Olawale Ajiboye, <span className="font-normal">The Groom.</span>
-						</h5>
+						</span>
 					</p>
 				</div>
 			</div>
@@ -73,9 +73,9 @@ const LoveStory = () => {
 						pellentesque. Ut diam quam nulla porttitor. Sit amet nulla facilisi
 						morbi tempus iaculis. Auctor neque vitae tempus quam pellentesque
 						nec nam aliquam sem
-						<h5 className="font-semibold mt-10">
+						<span className="font-semibold mt-10">
 							Esther Obisanya, <span className="font-normal">The Bride.</span>
-						</h5>
+						</span>
 					</p>
 					<div className="imgHolder">
 						<Image
