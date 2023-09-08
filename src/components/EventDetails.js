@@ -36,7 +36,7 @@ const EventDetails = () => {
 								</svg>
 								<p>Location:</p>
 							</div>
-							<p>JEROME'S GARDEN, IKEJA</p>
+							<p>JEROME&apos;S GARDEN, IKEJA</p>
 						</div>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
