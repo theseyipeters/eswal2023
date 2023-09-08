@@ -25,7 +25,7 @@ const Navbar = () => {
 				/>
 
 				<ul>
-					<li>
+					<li className="cursor-pointer">
 						<Link
 							to="gallery"
 							spy={true}
@@ -35,7 +35,7 @@ const Navbar = () => {
 							Gallery
 						</Link>
 					</li>
-					<li>
+					<li className="cursor-pointer">
 						<Link
 							to="love-story"
 							spy={true}
@@ -45,7 +45,7 @@ const Navbar = () => {
 							Our love story
 						</Link>
 					</li>
-					<li>
+					<li className="cursor-pointer">
 						<Link
 							to="event-details"
 							spy={true}
@@ -55,7 +55,7 @@ const Navbar = () => {
 							Event details
 						</Link>
 					</li>
-					<li>
+					<li className="cursor-pointer">
 						<Link
 							to="wedding-party"
 							spy={true}
@@ -65,7 +65,7 @@ const Navbar = () => {
 							Wedding party
 						</Link>
 					</li>
-					<li>
+					<li className="cursor-pointer">
 						<Link
 							to="send-gift"
 							spy={true}
@@ -77,7 +77,7 @@ const Navbar = () => {
 					</li>
 				</ul>
 
-				<button>ACCEPT INVITE</button>
+				{/* <button>ACCEPT INVITE</button> */}
 			</nav>
 		</>
 	);
